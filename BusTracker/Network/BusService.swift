@@ -13,15 +13,37 @@ enum BusRequestType {
 }
 
 protocol BusService {
-    func getBuses(_ requestType: BusRequestType, completion: @escaping(Result<BusResponse, Error>) -> Void)
+    func getBuses(_ requestType: BusRequestType, completion: @escaping(Result<[BusPosition], Error>) -> Void)
 }
 
 class BusServiceImpl: BusService {
     
-    private let path = "weather"
+    private let path = "wz/movements"
     private var parameters: [String : String] = [:]
     
-    func getBuses(_ requestType: BusRequestType, completion: @escaping(Result<BusResponse, Error>) -> Void) {
-        //TODO: make request
+    let apiServise = APIService.shared
+    let decoder = JSONDecoder()
+    
+    func getBuses(_ requestType: BusRequestType, completion: @escaping(Result<[BusPosition], Error>) -> Void) {
+        
+        let parameters: [String: String] = [:]
+        
+        apiServise.getRequestWithParameters(path: path, parameters: parameters, completion: {
+            [weak self] data, error in
+            if error == nil {
+                guard let data = data else { return }
+                
+                do {
+                    if let result = try
+                        self?.decoder.decode([BusPosition].self, from: data) {
+                        completion(.success(result))
+                    }
+                } catch {
+                    completion(.failure(error))
+                }
+            } else {
+                completion(.failure(error!))
+            }
+        })
     }
 }
