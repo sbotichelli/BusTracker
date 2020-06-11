@@ -17,12 +17,15 @@
 		F5505B212492B4D500DBFF37 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B1F2492B4D500DBFF37 /* APIService.swift */; };
 		F5505B232492B72E00DBFF37 /* BusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B222492B72E00DBFF37 /* BusService.swift */; };
 		F5505B242492B72E00DBFF37 /* BusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B222492B72E00DBFF37 /* BusService.swift */; };
-		F5505B262492C06600DBFF37 /* BusPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B252492C06600DBFF37 /* BusPosition.swift */; };
-		F5505B272492C06600DBFF37 /* BusPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B252492C06600DBFF37 /* BusPosition.swift */; };
+		F5505B262492C06600DBFF37 /* VehiclePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B252492C06600DBFF37 /* VehiclePosition.swift */; };
+		F5505B272492C06600DBFF37 /* VehiclePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B252492C06600DBFF37 /* VehiclePosition.swift */; };
 		F5505B292492C1C800DBFF37 /* VehicleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B282492C1C800DBFF37 /* VehicleType.swift */; };
 		F5505B2A2492C1C800DBFF37 /* VehicleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B282492C1C800DBFF37 /* VehicleType.swift */; };
 		F5505B312492D47B00DBFF37 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B302492D47B00DBFF37 /* MapViewModel.swift */; };
 		F5505B322492D47B00DBFF37 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B302492D47B00DBFF37 /* MapViewModel.swift */; };
+		F5505B342492E29200DBFF37 /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B332492E29200DBFF37 /* VehicleAnnotation.swift */; };
+		F5505B352492E29200DBFF37 /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B332492E29200DBFF37 /* VehicleAnnotation.swift */; };
+		F5505B362492E69400DBFF37 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B012492B4A200DBFF37 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +51,10 @@
 		F5505B162492B4A500DBFF37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5505B1F2492B4D500DBFF37 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		F5505B222492B72E00DBFF37 /* BusService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusService.swift; sourceTree = "<group>"; };
-		F5505B252492C06600DBFF37 /* BusPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusPosition.swift; sourceTree = "<group>"; };
+		F5505B252492C06600DBFF37 /* VehiclePosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclePosition.swift; sourceTree = "<group>"; };
 		F5505B282492C1C800DBFF37 /* VehicleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleType.swift; sourceTree = "<group>"; };
 		F5505B302492D47B00DBFF37 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		F5505B332492E29200DBFF37 /* VehicleAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +130,9 @@
 		F5505B2C2492C32300DBFF37 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F5505B252492C06600DBFF37 /* BusPosition.swift */,
+				F5505B252492C06600DBFF37 /* VehiclePosition.swift */,
 				F5505B282492C1C800DBFF37 /* VehicleType.swift */,
+				F5505B332492E29200DBFF37 /* VehicleAnnotation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -238,7 +243,8 @@
 				F5505B202492B4D500DBFF37 /* APIService.swift in Sources */,
 				F5505B002492B4A200DBFF37 /* SceneDelegate.swift in Sources */,
 				F5505B292492C1C800DBFF37 /* VehicleType.swift in Sources */,
-				F5505B262492C06600DBFF37 /* BusPosition.swift in Sources */,
+				F5505B342492E29200DBFF37 /* VehicleAnnotation.swift in Sources */,
+				F5505B262492C06600DBFF37 /* VehiclePosition.swift in Sources */,
 				F5505B312492D47B00DBFF37 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,11 +254,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5505B212492B4D500DBFF37 /* APIService.swift in Sources */,
-				F5505B272492C06600DBFF37 /* BusPosition.swift in Sources */,
+				F5505B272492C06600DBFF37 /* VehiclePosition.swift in Sources */,
 				F5505B242492B72E00DBFF37 /* BusService.swift in Sources */,
 				F5505B2A2492C1C800DBFF37 /* VehicleType.swift in Sources */,
 				F5505B152492B4A500DBFF37 /* BusTrackerTests.swift in Sources */,
+				F5505B352492E29200DBFF37 /* VehicleAnnotation.swift in Sources */,
 				F5505B322492D47B00DBFF37 /* MapViewModel.swift in Sources */,
+				F5505B362492E69400DBFF37 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

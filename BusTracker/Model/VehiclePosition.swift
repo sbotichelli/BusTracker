@@ -9,7 +9,7 @@
 import Foundation
 import MapKit
 
-struct BusPosition: Codable {
+struct VehiclePosition: Codable {
     let id: Int
     let type: String
     let direction: Int?
@@ -17,8 +17,8 @@ struct BusPosition: Codable {
     let lat: Double
     let lon: Double
     
-    func coordinate() -> CLLocation {
-        return CLLocation(latitude: lat, longitude: lon)
+    func coordinate() -> CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: lat, longitude: lon)
     }
     
     func vehicleType() -> VehicleType {

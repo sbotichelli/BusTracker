@@ -19,6 +19,7 @@ class MapViewController: UIViewController {
         mapView = MKMapView()
         mapView.frame = self.view.bounds
         self.view.addSubview(mapView)
+        configureViewModel()
     }
     
     override func viewDidLoad() {
@@ -30,5 +31,14 @@ class MapViewController: UIViewController {
         mapView.setRegion(viewModel.mapRegion, animated: true)
     }
     
+    func configureViewModel() {
+        viewModel.onUpdateCompletion = {
+            [weak self] annotations in
+            guard let mapView = self?.mapView else { return }
+            DispatchQueue.main.async {
+                mapView.addAnnotations(annotations)
+            }
+        }
+    }
 }
 

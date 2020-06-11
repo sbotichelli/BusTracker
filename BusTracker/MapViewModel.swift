@@ -11,12 +11,16 @@ import MapKit
 
 class MapViewModel {
     
-    private var buses: [BusPosition] = []
+    private var buses: [VehiclePosition] = []
     var mapCenter = CLLocationCoordinate2D(latitude: 52.22977, longitude: 21.01178)
     var mapSpan = MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
     var mapRegion: MKCoordinateRegion {
             MKCoordinateRegion(center: mapCenter, span: mapSpan)
     }
+    var vehicleAnnotations: [VehicleAnnotation] {
+        return buses.map{VehicleAnnotation(from: $0)}
+    }
+    var onUpdateCompletion: (([VehicleAnnotation]) -> Void)?
     
     let apiService = BusServiceImpl()
     
@@ -30,9 +34,14 @@ class MapViewModel {
             switch result {
             case .success(let busResponse):
                 self?.buses = busResponse
+                self?.notifyViewController()
             case .failure(let error):
                 print(error.localizedDescription)
             }
         })
+    }
+    
+    private func notifyViewController() {
+        self.onUpdateCompletion?(vehicleAnnotations)
     }
 }
