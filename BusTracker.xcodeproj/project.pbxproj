@@ -10,10 +10,17 @@
 		F5505AFE2492B4A200DBFF37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505AFD2492B4A200DBFF37 /* AppDelegate.swift */; };
 		F5505B002492B4A200DBFF37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505AFF2492B4A200DBFF37 /* SceneDelegate.swift */; };
 		F5505B022492B4A200DBFF37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B012492B4A200DBFF37 /* ViewController.swift */; };
-		F5505B052492B4A200DBFF37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5505B032492B4A200DBFF37 /* Main.storyboard */; };
 		F5505B072492B4A400DBFF37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5505B062492B4A400DBFF37 /* Assets.xcassets */; };
 		F5505B0A2492B4A400DBFF37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5505B082492B4A400DBFF37 /* LaunchScreen.storyboard */; };
 		F5505B152492B4A500DBFF37 /* BusTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B142492B4A500DBFF37 /* BusTrackerTests.swift */; };
+		F5505B202492B4D500DBFF37 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B1F2492B4D500DBFF37 /* APIService.swift */; };
+		F5505B212492B4D500DBFF37 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B1F2492B4D500DBFF37 /* APIService.swift */; };
+		F5505B232492B72E00DBFF37 /* BusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B222492B72E00DBFF37 /* BusService.swift */; };
+		F5505B242492B72E00DBFF37 /* BusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B222492B72E00DBFF37 /* BusService.swift */; };
+		F5505B262492C06600DBFF37 /* BusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B252492C06600DBFF37 /* BusResponse.swift */; };
+		F5505B272492C06600DBFF37 /* BusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B252492C06600DBFF37 /* BusResponse.swift */; };
+		F5505B292492C1C800DBFF37 /* VehicleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B282492C1C800DBFF37 /* VehicleType.swift */; };
+		F5505B2A2492C1C800DBFF37 /* VehicleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B282492C1C800DBFF37 /* VehicleType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +38,16 @@
 		F5505AFD2492B4A200DBFF37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5505AFF2492B4A200DBFF37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F5505B012492B4A200DBFF37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F5505B042492B4A200DBFF37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5505B062492B4A400DBFF37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5505B092492B4A400DBFF37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5505B0B2492B4A400DBFF37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5505B102492B4A500DBFF37 /* BusTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5505B142492B4A500DBFF37 /* BusTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTrackerTests.swift; sourceTree = "<group>"; };
 		F5505B162492B4A500DBFF37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5505B1F2492B4D500DBFF37 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F5505B222492B72E00DBFF37 /* BusService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusService.swift; sourceTree = "<group>"; };
+		F5505B252492C06600DBFF37 /* BusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusResponse.swift; sourceTree = "<group>"; };
+		F5505B282492C1C800DBFF37 /* VehicleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +92,8 @@
 				F5505AFD2492B4A200DBFF37 /* AppDelegate.swift */,
 				F5505AFF2492B4A200DBFF37 /* SceneDelegate.swift */,
 				F5505B012492B4A200DBFF37 /* ViewController.swift */,
-				F5505B032492B4A200DBFF37 /* Main.storyboard */,
+				F5505B2B2492C30D00DBFF37 /* Network */,
+				F5505B2C2492C32300DBFF37 /* Model */,
 				F5505B062492B4A400DBFF37 /* Assets.xcassets */,
 				F5505B082492B4A400DBFF37 /* LaunchScreen.storyboard */,
 				F5505B0B2492B4A400DBFF37 /* Info.plist */,
@@ -97,6 +108,24 @@
 				F5505B162492B4A500DBFF37 /* Info.plist */,
 			);
 			path = BusTrackerTests;
+			sourceTree = "<group>";
+		};
+		F5505B2B2492C30D00DBFF37 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F5505B222492B72E00DBFF37 /* BusService.swift */,
+				F5505B1F2492B4D500DBFF37 /* APIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F5505B2C2492C32300DBFF37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5505B252492C06600DBFF37 /* BusResponse.swift */,
+				F5505B282492C1C800DBFF37 /* VehicleType.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +211,6 @@
 			files = (
 				F5505B0A2492B4A400DBFF37 /* LaunchScreen.storyboard in Resources */,
 				F5505B072492B4A400DBFF37 /* Assets.xcassets in Resources */,
-				F5505B052492B4A200DBFF37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +230,11 @@
 			files = (
 				F5505B022492B4A200DBFF37 /* ViewController.swift in Sources */,
 				F5505AFE2492B4A200DBFF37 /* AppDelegate.swift in Sources */,
+				F5505B232492B72E00DBFF37 /* BusService.swift in Sources */,
+				F5505B202492B4D500DBFF37 /* APIService.swift in Sources */,
 				F5505B002492B4A200DBFF37 /* SceneDelegate.swift in Sources */,
+				F5505B292492C1C800DBFF37 /* VehicleType.swift in Sources */,
+				F5505B262492C06600DBFF37 /* BusResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5505B212492B4D500DBFF37 /* APIService.swift in Sources */,
+				F5505B272492C06600DBFF37 /* BusResponse.swift in Sources */,
+				F5505B242492B72E00DBFF37 /* BusService.swift in Sources */,
+				F5505B2A2492C1C800DBFF37 /* VehicleType.swift in Sources */,
 				F5505B152492B4A500DBFF37 /* BusTrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,14 +261,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F5505B032492B4A200DBFF37 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5505B042492B4A200DBFF37 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F5505B082492B4A400DBFF37 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
