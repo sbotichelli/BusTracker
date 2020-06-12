@@ -101,7 +101,6 @@
 			children = (
 				F5505AFD2492B4A200DBFF37 /* AppDelegate.swift */,
 				F5505AFF2492B4A200DBFF37 /* SceneDelegate.swift */,
-				F5505B382493C70500DBFF37 /* RepeatingTimer.swift */,
 				F5505B3B2493CA2E00DBFF37 /* Utilities */,
 				F5505B372493745300DBFF37 /* VC */,
 				F5505B2B2492C30D00DBFF37 /* Network */,
@@ -153,6 +152,7 @@
 		F5505B3B2493CA2E00DBFF37 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				F5505B382493C70500DBFF37 /* RepeatingTimer.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
