@@ -26,6 +26,8 @@
 		F5505B342492E29200DBFF37 /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B332492E29200DBFF37 /* VehicleAnnotation.swift */; };
 		F5505B352492E29200DBFF37 /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B332492E29200DBFF37 /* VehicleAnnotation.swift */; };
 		F5505B362492E69400DBFF37 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B012492B4A200DBFF37 /* MapViewController.swift */; };
+		F5505B392493C70500DBFF37 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B382493C70500DBFF37 /* RepeatingTimer.swift */; };
+		F5505B3A2493C70500DBFF37 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B382493C70500DBFF37 /* RepeatingTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 		F5505B282492C1C800DBFF37 /* VehicleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleType.swift; sourceTree = "<group>"; };
 		F5505B302492D47B00DBFF37 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		F5505B332492E29200DBFF37 /* VehicleAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
+		F5505B382493C70500DBFF37 /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +101,9 @@
 			children = (
 				F5505AFD2492B4A200DBFF37 /* AppDelegate.swift */,
 				F5505AFF2492B4A200DBFF37 /* SceneDelegate.swift */,
-				F5505B012492B4A200DBFF37 /* MapViewController.swift */,
-				F5505B302492D47B00DBFF37 /* MapViewModel.swift */,
+				F5505B382493C70500DBFF37 /* RepeatingTimer.swift */,
+				F5505B3B2493CA2E00DBFF37 /* Utilities */,
+				F5505B372493745300DBFF37 /* VC */,
 				F5505B2B2492C30D00DBFF37 /* Network */,
 				F5505B2C2492C32300DBFF37 /* Model */,
 				F5505B062492B4A400DBFF37 /* Assets.xcassets */,
@@ -135,6 +139,22 @@
 				F5505B332492E29200DBFF37 /* VehicleAnnotation.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F5505B372493745300DBFF37 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				F5505B302492D47B00DBFF37 /* MapViewModel.swift */,
+				F5505B012492B4A200DBFF37 /* MapViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		F5505B3B2493CA2E00DBFF37 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +266,7 @@
 				F5505B342492E29200DBFF37 /* VehicleAnnotation.swift in Sources */,
 				F5505B262492C06600DBFF37 /* VehiclePosition.swift in Sources */,
 				F5505B312492D47B00DBFF37 /* MapViewModel.swift in Sources */,
+				F5505B392493C70500DBFF37 /* RepeatingTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +278,7 @@
 				F5505B272492C06600DBFF37 /* VehiclePosition.swift in Sources */,
 				F5505B242492B72E00DBFF37 /* BusService.swift in Sources */,
 				F5505B2A2492C1C800DBFF37 /* VehicleType.swift in Sources */,
+				F5505B3A2493C70500DBFF37 /* RepeatingTimer.swift in Sources */,
 				F5505B152492B4A500DBFF37 /* BusTrackerTests.swift in Sources */,
 				F5505B352492E29200DBFF37 /* VehicleAnnotation.swift in Sources */,
 				F5505B322492D47B00DBFF37 /* MapViewModel.swift in Sources */,
