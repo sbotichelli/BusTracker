@@ -14,7 +14,7 @@ class VehicleAnnotation: NSObject, MKAnnotation {
     dynamic var coordinate: CLLocationCoordinate2D
     let title: String?
     let vehicleType: VehicleType
-    let direction: Int?
+    var direction: Int?
 
     init(from position: VehiclePosition) {
         self.id = position.id

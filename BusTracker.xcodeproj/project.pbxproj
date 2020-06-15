@@ -28,6 +28,8 @@
 		F5505B362492E69400DBFF37 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B012492B4A200DBFF37 /* MapViewController.swift */; };
 		F5505B392493C70500DBFF37 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B382493C70500DBFF37 /* RepeatingTimer.swift */; };
 		F5505B3A2493C70500DBFF37 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B382493C70500DBFF37 /* RepeatingTimer.swift */; };
+		F580F5AB2497E6930040625D /* VehicleUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F580F5AA2497E6930040625D /* VehicleUpdate.swift */; };
+		F580F5AC2497E6930040625D /* VehicleUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F580F5AA2497E6930040625D /* VehicleUpdate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,7 @@
 		F5505B302492D47B00DBFF37 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		F5505B332492E29200DBFF37 /* VehicleAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
 		F5505B382493C70500DBFF37 /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
+		F580F5AA2497E6930040625D /* VehicleUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleUpdate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,7 @@
 				F5505B252492C06600DBFF37 /* VehiclePosition.swift */,
 				F5505B282492C1C800DBFF37 /* VehicleType.swift */,
 				F5505B332492E29200DBFF37 /* VehicleAnnotation.swift */,
+				F580F5AA2497E6930040625D /* VehicleUpdate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,6 +268,7 @@
 				F5505B002492B4A200DBFF37 /* SceneDelegate.swift in Sources */,
 				F5505B292492C1C800DBFF37 /* VehicleType.swift in Sources */,
 				F5505B342492E29200DBFF37 /* VehicleAnnotation.swift in Sources */,
+				F580F5AB2497E6930040625D /* VehicleUpdate.swift in Sources */,
 				F5505B262492C06600DBFF37 /* VehiclePosition.swift in Sources */,
 				F5505B312492D47B00DBFF37 /* MapViewModel.swift in Sources */,
 				F5505B392493C70500DBFF37 /* RepeatingTimer.swift in Sources */,
@@ -281,6 +286,7 @@
 				F5505B3A2493C70500DBFF37 /* RepeatingTimer.swift in Sources */,
 				F5505B152492B4A500DBFF37 /* BusTrackerTests.swift in Sources */,
 				F5505B352492E29200DBFF37 /* VehicleAnnotation.swift in Sources */,
+				F580F5AC2497E6930040625D /* VehicleUpdate.swift in Sources */,
 				F5505B322492D47B00DBFF37 /* MapViewModel.swift in Sources */,
 				F5505B362492E69400DBFF37 /* MapViewController.swift in Sources */,
 			);
