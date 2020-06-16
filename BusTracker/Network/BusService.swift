@@ -29,9 +29,9 @@ class BusServiceImpl: BusService {
         
         switch requestType {
         case .region(let lat, let lon, let radius):
-            parameters["lat"] = String(lat)
-            parameters["lon"] = String(lon)
-            parameters["radius"] = String(radius)
+            parameters["lat"] = String(lat.rounded(toPlaces: 4))
+            parameters["lon"] = String(lon.rounded(toPlaces: 4))
+            parameters["radius"] = String(radius.rounded(toPlaces: 4))
         default:
             parameters = [:]
         }

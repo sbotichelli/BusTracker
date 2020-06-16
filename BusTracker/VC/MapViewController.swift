@@ -18,6 +18,7 @@ class MapViewController: UIViewController {
         super.loadView()
         mapView = MKMapView()
         mapView.frame = self.view.bounds
+        mapView.delegate = self
         self.view.addSubview(mapView)
         configureViewModel()
     }
@@ -75,3 +76,8 @@ class MapViewController: UIViewController {
     }
 }
 
+extension MapViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        viewModel.mapRegion = mapView.region
+    }
+}

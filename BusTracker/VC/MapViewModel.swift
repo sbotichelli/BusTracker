@@ -11,23 +11,23 @@ import MapKit
 
 class MapViewModel {
     
-    private var buses: [VehiclePosition] = []
+    private var vehicles: [VehiclePosition] = []
     var mapCenter = CLLocationCoordinate2D(latitude: 52.22977, longitude: 21.01178)
-    var mapSpan = MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
-    var mapRegion: MKCoordinateRegion {
-            MKCoordinateRegion(center: mapCenter, span: mapSpan)
-    }
+    var mapSpan = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+    var mapRegion: MKCoordinateRegion!
+    var postitonUpdateInterval: Int = 15
+    
     var vehicleAnnotations: [VehicleAnnotation] {
-        return buses.map{VehicleAnnotation(from: $0)}
+        return vehicles.map{VehicleAnnotation(from: $0)}
     }
     
     var onUpdateCompletion: (([VehicleUpdate], [VehicleAnnotation], [Int]) -> Void)?
-    var postitonUpdateInterval: Int = 15
     
     let apiService = BusServiceImpl()
     private let timer = RepeatingTimer(timeInterval: 15)
     
     init() {
+        mapRegion = MKCoordinateRegion(center: mapCenter, span: mapSpan)
         fetchBuses()
         runTimer()
     }
@@ -45,22 +45,28 @@ class MapViewModel {
     }
     
     private func fetchBuses() {
-        apiService.getBuses(.all, completion: {
+        let lat = mapRegion.center.latitude
+        let lon = mapRegion.center.longitude
+        let radius = min(mapRegion.span.latitudeDelta, mapRegion.span.longitudeDelta)
+        apiService.getBuses(.region(lat: lat,
+                                    lon: lon,
+                                    radius: radius),
+                            completion: {
             [weak self] result in
             switch result {
-            case .success(let busResponse):
-                self?.countVehicleUpdates(old: self?.buses, new: busResponse)
-                self?.buses = busResponse
+            case .success(let response):
+                self?.countVehicleUpdates(old: self?.vehicles, new: response)
+                self?.vehicles = response
             case .failure(let error):
                 print(error.localizedDescription)
             }
         })
     }
     
-    /// Counts patam
+    /// Prepairs annotations add, remove and updates
     /// - Parameters:
-    ///   - oldPositions: <#oldPositions description#>
-    ///   - new: <#new description#>
+    ///   - oldPositions: list of  vehicle positions from previous iteration
+    ///   - new: new list of vehicle positions
     private func countVehicleUpdates(old oldPositions: [VehiclePosition]?, new: [VehiclePosition]) {
         let old = oldPositions == nil ? [] : oldPositions!
         

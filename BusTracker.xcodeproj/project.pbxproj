@@ -30,6 +30,8 @@
 		F5505B3A2493C70500DBFF37 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5505B382493C70500DBFF37 /* RepeatingTimer.swift */; };
 		F580F5AB2497E6930040625D /* VehicleUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F580F5AA2497E6930040625D /* VehicleUpdate.swift */; };
 		F580F5AC2497E6930040625D /* VehicleUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F580F5AA2497E6930040625D /* VehicleUpdate.swift */; };
+		F580F5AE24993FB10040625D /* DoubleRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F580F5AD24993FB10040625D /* DoubleRound.swift */; };
+		F580F5AF24993FB10040625D /* DoubleRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F580F5AD24993FB10040625D /* DoubleRound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,7 @@
 		F5505B332492E29200DBFF37 /* VehicleAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
 		F5505B382493C70500DBFF37 /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
 		F580F5AA2497E6930040625D /* VehicleUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleUpdate.swift; sourceTree = "<group>"; };
+		F580F5AD24993FB10040625D /* DoubleRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleRound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				F5505B382493C70500DBFF37 /* RepeatingTimer.swift */,
+				F580F5AD24993FB10040625D /* DoubleRound.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -268,6 +272,7 @@
 				F5505B002492B4A200DBFF37 /* SceneDelegate.swift in Sources */,
 				F5505B292492C1C800DBFF37 /* VehicleType.swift in Sources */,
 				F5505B342492E29200DBFF37 /* VehicleAnnotation.swift in Sources */,
+				F580F5AE24993FB10040625D /* DoubleRound.swift in Sources */,
 				F580F5AB2497E6930040625D /* VehicleUpdate.swift in Sources */,
 				F5505B262492C06600DBFF37 /* VehiclePosition.swift in Sources */,
 				F5505B312492D47B00DBFF37 /* MapViewModel.swift in Sources */,
@@ -280,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5505B212492B4D500DBFF37 /* APIService.swift in Sources */,
+				F580F5AF24993FB10040625D /* DoubleRound.swift in Sources */,
 				F5505B272492C06600DBFF37 /* VehiclePosition.swift in Sources */,
 				F5505B242492B72E00DBFF37 /* BusService.swift in Sources */,
 				F5505B2A2492C1C800DBFF37 /* VehicleType.swift in Sources */,
