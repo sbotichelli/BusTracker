@@ -10,6 +10,7 @@ import Foundation
 
 enum BusRequestType {
     case all
+    case region(lat: Double, lon: Double, radius: Double)
 }
 
 protocol BusService {
@@ -26,7 +27,14 @@ class BusServiceImpl: BusService {
     
     func getBuses(_ requestType: BusRequestType, completion: @escaping(Result<[VehiclePosition], Error>) -> Void) {
         
-        let parameters: [String: String] = [:]
+        switch requestType {
+        case .region(let lat, let lon, let radius):
+            parameters["lat"] = String(lat)
+            parameters["lon"] = String(lon)
+            parameters["radius"] = String(radius)
+        default:
+            parameters = [:]
+        }
         
         apiServise.getRequestWithParameters(path: path, parameters: parameters, completion: {
             [weak self] data, error in
